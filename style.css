@@ -55,20 +55,54 @@ body {
     width: 280px;
     padding: 20px;
     border-radius: 50px;
-    background-color: #FADA7A;
+    background-color: #F0A04B;
     box-shadow: 5px 5px 15px #F0A04B;
     text-align: center;
     font-family: Arial;
-    color: #333;
-    transition: transform 1s ease-in-out, box-shadow 0.5s ease-in-out;
+    color: white;
+    transition: transform 0.3s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
 .bubble h2 {
-    color: #F0A04B;
+    color: white;
     margin-bottom: 10px;
 }
 
 .bubble:hover {
     transform: scale(1.1);
     box-shadow: 8px 8px 20px #F0A04B;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    width: 280px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: #048dff;
+    box-shadow: 5px 5px 15px #0a7ede;
+    text-align: center;
+    font-family: Arial;
+    color: white;
+    margin-top: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+
+.discord a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.discord {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.socials:hover {
+    transform: scale(1.1);
+    box-shadow: 8px 8px 20px #0a7ede;
 }
