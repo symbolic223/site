@@ -17,7 +17,7 @@ body {
     align-items: center;
     font-family: Arial;
     border: 3px solid #F0A04B;
-    border-radius: 10px;
+    border-radius: 20px;
     color: aliceblue;
     background-color: #F0A04B;
 }
@@ -60,8 +60,16 @@ body {
     text-align: center;
     font-family: Arial;
     color: white;
-    transition: transform 0.3s ease-in-out, box-shadow 0.5s ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
 }
+
+.bubble.show, .socials.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 .bubble h2 {
     color: white;
@@ -86,7 +94,9 @@ body {
     font-family: Arial;
     color: white;
     margin-top: 15px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.5s ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 
@@ -99,7 +109,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.3s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.bubble, .socials {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
 }
 
 .discord img {
