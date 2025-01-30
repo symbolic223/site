@@ -29,6 +29,39 @@ body {
     justify-content: center;
 }
 
+.options {
+    display: flex;
+    column-gap: 100px;
+    margin-bottom: 20px;
+    font-size: 27px;
+}
+
+.options a {
+    border: 3px solid #F0A04B;
+    background-color: #F0A04B;
+    border-radius: 10px;
+    text-align: center;
+    width: 120px;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+.options a:hover {
+    background-color: #f7be82;
+    border-color: #f7be82;
+    transform: scale(1.1);
+}
+
+.options a:active {
+    background-color: #e07b30;
+    border-color: #e07b30;
+    transform: scale(0.95);
+}
+
 .ip {
     text-align: center;
     font-family: Arial;
