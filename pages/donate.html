@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GayZone MC</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" href="/assets/photo_2024-01-17_15-25-34.png">
+</head>
+<body>
+<div class="main-container">
+  <div class="header">
+    <div class="logo">
+      <img src="/assets/photo_2024-01-17_15-25-34.png" alt="govno">
+      <h1>GayZone MC</h1>
+    </div>
+    <div class="options">
+      <a href="/index.html">Главная</a>
+      <a href="server.html">Сервер</a>
+      <a href="launcher.html">Лаунчер</a>
+      <a href="about.html">О нас</a>
+    </div>
+    <div class="ip">
+      <p>IP: gay-zone.ru</p>
+    </div>
+  </div>
+
+  <div class="bubbles">
+    <div class="bubble">
+      <h2>Фракции</h2>
+      <p>На сервере присутствует система фракций (кланов)</p>
+    </div>
+    <div class="bubble">
+      <h2>Вайтлист</h2>
+      <p>Чтобы попасть на сервер необходимо оставить заявку на дискорд сервере</p>
+    </div>
+    <div class="bubble">
+      <h2>Лаунчер</h2>
+      <p>У сервера есть собственный лаунчер</p>
+    </div>
+  </div>
+
+  <div class="socials">
+    <div class="discord">
+      <img src="/assets/discord-logo.png" alt="govno">
+      <h2><a>Наш Discord сервер</a></h2>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll(".bubble, .socials");
+
+    elements.forEach((el, index) => {
+      setTimeout(() => {
+        el.classList.add("show");
+      }, index * 100);
+    });
+  });
+</script>
+</body>
+</html>
